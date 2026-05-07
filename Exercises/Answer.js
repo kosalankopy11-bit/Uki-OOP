@@ -81,3 +81,38 @@ class Manager extends Employee {
 const manager = new Manager("Hoza", 50000, "Sales");
 console.log(manager.details());
 
+//Question 5
+
+class Engineer extends Employee {
+  constructor(name, salary, specialization) {
+    super(name, salary);
+    this.specialization = specialization;
+  }
+  details() {
+    return super.details() + ", Specialization: " + this.specialization;
+  }
+}
+
+const engineer = new Engineer("Alice", 60000, "Software");
+console.log(engineer.details());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
